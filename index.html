@@ -1,0 +1,627 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- ===========CSS Files========== -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/skins/color-1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!--=====Style Switcher===== -->
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="css/style-switcher.css">
+</head>
+<body>
+    <!-- main container start -->
+    <div class="main-container">
+    <!-- Aside start -->
+    <div class="aside">
+        <div class="logo">
+            <a href="#"><span>P</span>ortfolio</a>
+        </div>
+        <div class="nav-toggler">
+            <span></span>
+        </div>
+        <ul class="nav">
+            <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="#about"><i class="fa fa-user"></i> About </a></li>
+            <li><a href="#TechSkills"><i class="fa fa-cogs"></i> Tech Skills </a></li>
+            <li><a href="#services"><i class="fa fa-briefcase"></i> Projects</a></li>
+            <li><a href="#Volunteering"><i class="fa fa-hand-holding-heart"></i> Volunteering </a></li>
+            <li><a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
+        </ul>
+    </div>
+    <!-- ======Aside end======= -->
+    <!-- ======Main Content start====== -->
+    <div class="main-content">
+    <!-- ======Home Section start====== -->
+    <section class="home section" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="home-info padd-15">
+                    <h3 class="hello">Hello, My name is <span class="name">Vishaka Lakmali</span></h3>
+                    <h3 class="my-profession">I'm a <span class="typing">undergraduate</span></h3>
+                    <p>I am an undergraduate student at Sabaragamuwa University in Sri Lanka, currently pursuing a BSc (Honors) degree in Computing and Information Systems.</p>
+    
+                    <a href="#" class="btn hire-me" id="download-cv">Download My CV</a>
+    
+                    <script>
+                        document.getElementById('download-cv').addEventListener('click', function(e) {
+                            e.preventDefault(); // Prevent the default anchor behavior
+                            const link = document.createElement('a');
+                            link.href = '../Vishaka_Lakmali_QA.pdf'; // Adjust path as necessary
+                            link.download = 'Vishaka_Lakmali_QA.pdf'; // Optional: specify the file name
+                            document.body.appendChild(link);
+                            link.click();
+                            document.body.removeChild(link);
+                        });
+                    </script>
+                </div> 
+                <div class="home-img padd-15">
+                    <img src="images/home.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ======Home Section end====== -->
+    <!-- ======About Section start====== -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="row">
+                   <div class="section-title padd-15">
+                    <h2>About Me</h2>
+                   </div> 
+                </div>
+                <div class="row">
+                    <div class="about-content padd-15">
+                        <div class="row">
+                          <div class="about-text padd-15">
+                           
+                            <p>I am a dedicated IT undergraduate with a strong interest in Quality Assurance and development. As a MERN
+                                mobile application developer, I have a solid foundation in the MERN Stack and frontend development with React. I
+                                also have hands-on experience in software testing, including Functional and UI testing using tools like Selenium
+                                and Applitools. I am eager to contribute to a team’s success with my attention to detail, analytical thinking, and
+                                collaborative skills.
+                            </p>
+                            
+                            </div>
+                            
+                               
+                        
+                        
+                        <!--div class="row"-->
+                            <div class="personal-info padd-15">
+                             
+                            
+                            <div class="skills padd-15">
+                            
+                                <div class="section-title padd-15" style="position: relative; left: -30px;">
+                                    <h2>Tech Skills</h2>
+                                </div>
+                                
+                                
+                                <!-- Skills -->
+                            
+                                <div class="row">
+                                    <h2 style="color:  #f8c617;">Programming languages</h2>
+                                    <div class="skills padd-15">
+                                        <div class="row skill-container">
+                                            <div class="skill-item padd-15">
+                                                <div class="skill-circle">
+                                                    <img src="images/4.png" alt="CSS" class="skill-img">
+                                                </div>
+                                                <h5>CSS</h5>
+                                            </div>
+                                            <!-- Skill Item 2: JavaScript -->
+                                            <div class="skill-item padd-15">
+                                                <div class="skill-circle">
+                                                    <img src="images/5.png" alt="JavaScript" class="skill-img">
+                                                </div>
+                                                <h5>JavaScript</h5>
+                                            </div>
+                                            <!-- Skill Item 3: Java -->
+                                            <div class="skill-item padd-15">
+                                                <div class="skill-circle">
+                                                    <img src="images/9.png" alt="Java" class="skill-img">
+                                                </div>
+                                                <h5>Java</h5>
+                                            </div>
+                                            
+                                            <!-- Skill Item 5: C -->
+                                            <div class="skill-item padd-15">
+                                                <div class="skill-circle">
+                                                    <img src="images/C.png" alt="C" class="skill-img">
+                                                </div>
+                                                <h5>C</h5>
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <!-- Frameworks and Tools -->
+                                <div class="row">
+                                    <h2 style="color:  #f8c617;">Frameworks and Tools</h2>
+                                    <div class="skills padd-15">
+                                        <div class="row skill-container">
+                                            <!-- Skill Item 1: React -->
+                                            <div class="skill-item padd-15">
+                                                <div class="skill-circle">
+                                                    <img src="images/6.png" alt="React" class="skill-img">
+                                                </div>
+                                                <h5>React</h5>
+                                            </div>
+                                            <!-- Skill Item 2: Selenium -->
+                                            <div class="skill-item padd-15">
+                                                <div class="skill-circle">
+                                                    <img src="images/Selenium.png" alt="Selenium" class="skill-img">
+                                                </div>
+                                                <h5>Selenium</h5>
+                                            </div>
+                                            <!-- Skill Item 3: Postman -->
+                                            <div class="skill-item padd-15">
+                                                <div class="skill-circle">
+                                                    <img src="images/postman.png" alt="Postman" class="skill-img">
+                                                </div>
+                                                <h5>Postman</h5>
+                                            </div>
+                                            <!-- Skill Item 4: TestNG -->
+                                            <div class="skill-item padd-15">
+                                                <div class="skill-circle">
+                                                    <img src="images/Testng.png" alt="TestNG" class="skill-img">
+                                                </div>
+                                                <h5>TestNG</h5>
+                                            </div>
+                                            <!-- Skill Item 5: Applitools -->
+                                            <div class="skill-item padd-15">
+                                                <div class="skill-circle">
+                                                    <img src="images/Applitools.png" alt="Applitools" class="skill-img">
+                                                </div>
+                                                <h5>Applitools</h5>
+                                            </div>
+                                             <!-- Skill Item 4: TestNG -->
+                                             <div class="skill-item padd-15">
+                                                <div class="skill-circle">
+                                                    <img src="images/1.png" alt="TestNG" class="skill-img">
+                                                </div>
+                                                <h5>Figma</h5>
+                                            </div>
+                                            <!-- Skill Item 5: Applitools -->
+                                            <div class="skill-item padd-15">
+                                                <div class="skill-circle">
+                                                    <img src="images/10.png" alt="Applitools" class="skill-img">
+                                                </div>
+                                                <h5>Git</h5>
+                                            </div>
+                                            </div>
+                                        </div>
+                                  
+                                </div>
+                            
+
+
+                                
+                                <!-- databases -->
+                                <div class="row"></div>
+                                    <h2 style="color:  #f8c617;">databases</h2>
+                                    <div class="skills padd-15">
+                                        <div class="row skill-container">
+                                            <!-- Skill Item 1: React -->
+                                            <div class="skill-item padd-15">
+                                                <div class="skill-circle">
+                                                    <img src="images/8.png" alt="React" class="skill-img" >
+                                                </div>
+                                                <h5>Mysql</h5>
+                                            </div>
+                                            <!-- Skill Item 2: MongoDB -->
+                                            <div class="skill-item padd-15">
+                                                <div class="skill-circle">
+                                                    <img src="images/mongodb.png" alt="MongoDB" class="skill-img">
+                                                </div>
+                                                <h5>MongoDB</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                              
+                             </div>
+                        </div>
+                        
+                        
+                        
+                            <div class="education padd-15">
+                              
+
+ <!-- ======services Section start====== -->
+ <section class="service section" id="services">
+    <div class="container">
+        <div class="row">
+            <div class="section-title padd-15">
+                <h2>Projects</h2>
+            </div>
+        </div>
+        <div class="row">
+            <!-- =====Services item start====== -->
+            <div class="service-item padd-15">
+                <div class="service-item-inner box">
+                    <div class="row align-items-center">
+                        <div class="col-md-4">
+                            <a href="https://github.com/lakmali-vishaka/FoodFlow_Testing" target="_blank">
+                                <img src="images/FoodFlow.png"  class="service-img">
+                            </a>
+                        </div>
+                        <div class="col-md-8">
+                            <h4 style="margin-top: 15px; color: #f8c617;">FoodFlow Web Application Testing</h4>
+                            <p>Testing covered key features like user registration, navigation, contact forms, and supplier dashboard functionality. I created a detailed project plan and documentation ensured the application meets user needs effectively.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- =====Services item end====== -->
+
+            <!-- =====Services item start====== -->
+            <div class="service-item padd-15">
+                <div class="service-item-inner box">
+                    <div class="row align-items-center">
+                        <div class="col-md-4">
+                            <a href="https://github.com/lakmali-vishaka/EcommerceDemoWeb_Testing" target="_blank">
+                                <img src="images/Ecommerce.png"  class="service-img">
+                            </a>
+                        </div>
+                        <div class="col-md-8">
+                            <h4 style="margin-top: 15px; color: #f8c617;">Swang labs Web application Testing</h4>
+                            <p>This Project focuesed on  testing the key functionalities of an e-commerce platform. 
+                                Features Tested are
+                                
+                            User Authentication
+                                ,Ensuring that products can be added, and removed from the cart smoothly.
+                               and Testing the complete checkout process.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- =====Services item end====== -->
+
+          <!-- =====Services item start====== -->
+          <div class="service-item padd-15">
+            <div class="service-item-inner box">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <a href="https://github.com/lakmali-vishaka/DriverUniversity_Automation" target="_blank">
+                            <img src="images/UNI.png"  class="service-img">
+                        </a>
+                    </div>
+                    <div class="col-md-8">
+                        <h4 style="margin-top: 15px; color: #f8c617;">WebDriverUniversity testing</h4>
+                        <p>This project focuses on testing different components in DriverUniversity webapplication using selenium.This covering Testing
+
+                            ALertPopUp
+                            Check Box
+                            Drop Down
+                            Form
+                            Frame
+                            Mouse Events
+                            Radio Button
+                            Screenshot
+                            TODo
+                            WebTable
+                            WindowHandling
+                            Scrolldown</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =====Services item end====== -->
+
+
+        <!-- =====Services item start====== -->
+        <div class="service-item padd-15">
+            <div class="service-item-inner box">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <a href="https://github.com/lakmali-vishaka/HighWay_Hub" target="_blank">
+                            <img src="images/HWH.png"  class="service-img">
+                        </a>
+                    </div>
+                    <div class="col-md-8">
+                        <h4 style="margin-top: 15px; color: #f8c617;">HighWay Hub</h4>
+                        <p>HighWay Hub is a mobile application designed for issuing virtual tickets for highway journeys. It offers a range of features
+                            including vehicle registration and generating QR, virtual ticket generation, journey progress updates, and functionality for
+                            toll booth operators to log entrance and exit points, chatbot.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =====Services item end====== -->
+
+        <!-- =====Services item start====== -->
+        <div class="service-item padd-15">
+            <div class="service-item-inner box">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                       
+                            <img src="images/SewingStar.png"  class="service-img">
+                        
+                    </div>
+                    <div class="col-md-8">
+                        <h4 style="margin-top: 15px; color: #f8c617;">SewingStar</h4>
+                        <p>SewingStar is a mobile application connecting users with tailors by allowing them to find, book, and review tailors
+                            in their area. The app features a virtual dressing room and AI-generated measurement guidelines to enhance
+                            user satisfaction.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =====Services item end====== -->
+
+         <!-- =====Services item start====== -->
+        <div class="service-item padd-15">
+            <div class="service-item-inner box">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                       
+                            <img src="images/Vitacam.png"  class="service-img">
+                        
+                    </div>
+                    <div class="col-md-8">
+                        <h4 style="margin-top: 15px; color: #f8c617;">VitaCam</h4>
+                        <p>This is an ongoing project, developed to identify vitamin deficiency by using image processing machine learning model.It includes features like Treatement recommandation and detail about vitamin deficiency. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =====Services item end====== -->
+        </div>
+    </div>
+</section>
+<!-- ======services Section end====== -->
+
+                        <!-- Volunteering -->
+                         <section id="Volunteering">
+
+                        <div class="section-title padd-15">
+                            <h2>Volunteering</h2>
+                           </div> 
+                        
+<div class="volunteer-experience-grid">
+    <!-- Box 1 -->
+    <div class="experience-box">
+        <div class="slideshow-container">
+            <div class="slides">
+                <img src="images/Aurelia7.jpg" style="width:100%">
+            </div>
+            <div class="slides">
+                <img src="images/Aurelia2.jpg" style="width:100%">
+            </div>
+            <div class="slides">
+                <img src="images/Aurelia3.jpg" style="width:100%">
+            </div>
+            <div class="slides">
+                <img src="images/Aurelia4.jpg" style="width:100%">
+            </div>
+        </div>
+        <div class="description">
+            <p><strong>Aurelia V1.0</strong></p>
+            <p>I served as the<b>Program Team Lead</b></p>
+
+        </div>
+    </div>
+
+    <!-- Box 2 -->
+    <div class="experience-box">
+        <div class="slideshow-container">
+            <div class="slides">
+                <img src="images/inspireIEEE_10.jpg" style="width:100%">
+            </div>
+            <div class="slides">
+                <img src="images/inspire IEEE_3.jpg" style="width:100%">
+            </div>
+            <div class="slides">
+                <img src="images/inspire IEEE_4.jpg" style="width:100%">
+            </div>
+            <div class="slides">
+                <img src="images/inspire IEEE_6.jpg" style="width:100%">
+            </div>
+            <div class="slides">
+                <img src="images/inspire IEEE_6.jpg" style="width:100%">
+            </div>
+        </div>
+        <div class="description">
+            <p><strong>Inspire IEEE</strong></p>
+            <p>I worked as the<b>Program Team Member</b></p>
+        </div>
+    </div>
+
+    <!-- Box 3 -->
+    <div class="experience-box">
+        <div class="slideshow-container">
+            <div class="slides">
+                <img src="images/Team.jpg" style="width:100%">
+            </div>
+            <div class="slides">
+                <img src="images/INSL1.jpeg" style="width:100%">
+            </div>
+            <div class="slides">
+                <img src="images/INSL2.jpeg" style="width:100%">
+            </div>
+            <div class="slides">
+                <img src="images/INSL3.jpeg" style="width:100%">
+            </div>
+            <div class="slides">
+                <img src="images/INSL4.jpeg" style="width:100%">
+            </div>
+            <div class="slides">
+                <img src="images/INSL5.jpeg" style="width:100%">
+            </div>
+            <div class="slides">
+                <img src="images/INSL6.jpeg" style="width:100%">
+            </div>
+        </div>
+        <div class="description">
+            <p><strong>INSL 2024</strong></p>
+            <p>Currently I am working as<b>Program team Assistant Lead</b>  for Sabaragamuwa Province Competition</p>
+        </div>
+    </div>
+
+    <!-- Box 4 -->
+    <div class="experience-box">
+        <div class="slideshow-container">
+            <div class="slides">
+                <img src="images/Volunteer_Of_month.jpg" style="width:100%">
+            </div>
+        </div>
+        <div class="description">
+            <p><strong>Volunteer Experience 2</strong></p>
+            <p>Details about the second volunteer experience go here.</p>
+        </div>
+    </div>
+
+     <!-- Box 4 -->
+     <div class="experience-box">
+        <div class="slideshow-container">
+            <div class="slides">
+                <img src="images/commitee_Member.jpg" style="width:100%">
+            </div>
+        </div>
+        <div class="description">
+            <p><strong>Volunteer Experience 2</strong></p>
+            <p>Details about the second volunteer experience go here.</p>
+        </div>
+    </section>
+    </div>
+
+</div>
+
+
+                          
+<!---->
+
+
+
+
+    <!-- ======contact Section start====== -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>Contact <MEta:refreshe</MEta:refresh></h2>
+                    </div>
+                </div>
+                <h3 class="contact-title padd-15">Have You Any Questions ?</h3>
+                <h4 class="contact-sub-title padd-15">Find Me on</h4>
+                <div class="row">
+                    <!-- ===== contact info item start===== -->
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-phone"></i></div>
+                        <h4>github</h4>
+                        
+                    </div>
+                    <!-- ===== contact info item end===== -->
+                     <!-- ===== contact info item start===== -->
+                     <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                        <h4>Linkedin</h4>
+                       
+                    </div>
+                    <!-- ===== contact info item end===== -->
+                     <!-- ===== contact info item start===== -->
+                     <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-envelope"></i></div>
+                        <h4>Email</h4>
+                        <p>vishakalakmali623@gmail.com</p>
+                    </div>
+                    <!-- ===== contact info item end===== -->
+                     <!-- ===== contact info item start===== -->
+                     <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-globe-asia"></i></div>
+                        <h4>Portfolio</h4>
+                        
+                    </div>
+                    <!-- ===== contact info item end===== -->
+                </div>
+                <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
+                <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
+                <!-- =====contact form===== -->
+                <div class="row">
+                    <div class="contact-form padd-15">
+                        <div class="row">
+                            <div class="form-item col-6 padd-15">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="form-item col-6 padd-15">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Subject">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <div class="form-group">
+                                    <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <div class="form-group">
+                                    <button type="submit" class="btn" >Send Message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+            </section>
+        </section>
+    <!-- ======contact Section end====== -->
+
+    </div>
+   
+    <!-- ======Main Content end====== -->
+    </div>
+    <!-- ======main container end====== -->
+    <!-- ======Style Switcher Start====== -->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas "></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>  
+        </div>
+    </div>
+    <!-- ======Style Switcher End====== -->
+    <!-- ==========JS Files========== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+    <script src="js/style-switcher.js"></script>
+    
+</body>
+</html>
