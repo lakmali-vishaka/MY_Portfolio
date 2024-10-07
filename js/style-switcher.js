@@ -28,33 +28,21 @@ function setActiveStyle(color)
 }
 
 /* ========================theme light and dark mode======================== */
-// Check for user's dark mode preference
-window.addEventListener('load', () => {
-    const dayNight = document.querySelector('.day-night i');
-    const isDarkMode = localStorage.getItem('theme') === 'dark';
+const dayNight = document.querySelector(".day-night");
 
-    if (isDarkMode) {
-        document.body.classList.add('dark');
-        dayNight.classList.add('fa-moon');
-    } else {
-        document.body.classList.remove('dark');
-        dayNight.classList.add('fa-sun');
-    }
+// Set dark mode as the default mode when the page loads
+window.addEventListener("load", () => {
+    document.body.classList.add("dark"); // Set dark mode by default
+    dayNight.querySelector("i").classList.add("fa-sun"); // Show sun icon for light mode switch
 });
 
-// Toggle dark mode
-document.querySelector('.day-night').addEventListener('click', () => {
-    const dayNight = document.querySelector('.day-night i');
-    document.body.classList.toggle('dark');
-
-    if (document.body.classList.contains('dark')) {
-        localStorage.setItem('theme', 'dark');
-        dayNight.classList.replace('fa-sun', 'fa-moon');
-    } else {
-        localStorage.setItem('theme', 'light');
-        dayNight.classList.replace('fa-moon', 'fa-sun');
-    }
+// Toggle between dark and light mode on click
+dayNight.addEventListener("click", () => {
+    dayNight.querySelector("i").classList.toggle("fa-sun");
+    dayNight.querySelector("i").classList.toggle("fa-moon");
+    document.body.classList.toggle("dark"); // Toggle dark mode on/off
 });
+
 
 
 // ====================== Multiple Slideshows ========================
